@@ -3,6 +3,7 @@
 import js2py
 
 # Just some redundant get functions for values that are reused throughout PoC scripts
+# Crafted by Abdullah Ansari while at WithSecure
 
 def get_cookie():
     
