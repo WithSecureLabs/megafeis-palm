@@ -5,17 +5,23 @@ The contents of this repository were produced by Abdullah Ansari during his time
 ---
 
 
-Welcome to the 🤦‍♂️ megafeis-palm 🤦‍♂️ repository. This repo contains proof-of-concept (PoC) code for vulnerabilities I discovered in the [DBD+ mobile companion app](https://play.google.com/store/apps/details?id=net.oklok.dbd&hl=en_US&gl=US) (<=1.4.4) during my internship at [WithSecure](https://www.withsecure.com/en/home). The app was designed to control [MEGAFEIS-branded smart locks sold on Amazon](https://www.amazon.com/stores/MEGAFEIS/page/254B3FD4-0D84-44E1-A05E-973392450554?ref_=ast_bln), which included model numbers [FB50S](https://www.amazon.com/Fingerprint-Bluetooth-Waterproof-MEGAFEIS-Biometric/dp/B07PHQNTHL/ref=sr_1_2?crid=31XT3A5ZOGB8S&keywords=megafeis&qid=1659445906&sprefix=megafeis%2Caps%2C67&sr=8-2), [GS40F](https://www.amazon.com/Fingerprint-MEGAFEIS-Bluetooth-Biometric-Cabinet/dp/B08HVGPFCY?ref_=ast_sto_dp), [GS60FB](https://www.amazon.com/Fingerprint-Bluetooth-MEGAFEIS-Suitable-Cabinets/dp/B08MQGGB11?ref_=ast_sto_dp), and [GQ10FB](https://www.megafeis.com/product-page/fingerprint-bike-lock-cable). These PoCs were tested on all of the aforementioned smart lock models.
+Welcome to the 🤦‍♂️ megafeis-palm 🤦‍♂️ repository. This repo contains proof-of-concept (PoC) code for vulnerabilities I discovered in the [DBD+ mobile companion app](https://play.google.com/store/apps/details?id=net.oklok.dbd&hl=en_US&gl=US) ([Alternate archived page](https://web.archive.org/web/20230228185313/https://play.google.com/store/apps/details?id=net.oklok.dbd&hl=en_US&gl=US)) (<=1.4.4) during my internship at [WithSecure](https://www.withsecure.com/en/home). The app was designed to control [MEGAFEIS-branded smart locks sold on Amazon](https://www.amazon.com/stores/MEGAFEIS/page/254B3FD4-0D84-44E1-A05E-973392450554?ref_=ast_bln) ([Archived](https://web.archive.org/web/20230228185542/https://www.amazon.com/stores/MEGAFEIS/page/254B3FD4-0D84-44E1-A05E-973392450554?ref_=ast_bln)), which included model numbers:
+- [FB50S](https://www.amazon.com/Fingerprint-Bluetooth-Waterproof-MEGAFEIS-Biometric/dp/B07PHQNTHL/ref=sr_1_2?crid=31XT3A5ZOGB8S&keywords=megafeis&qid=1659445906&sprefix=megafeis%2Caps%2C67&sr=8-2) ([Archive](https://web.archive.org/web/20230228190233/https://www.amazon.com/Fingerprint-Bluetooth-Waterproof-MEGAFEIS-Biometric/dp/B07PHQNTHL/ref=sr_1_2?crid=31XT3A5ZOGB8S&keywords=megafeis&qid=1659445906&sprefix=megafeis%2Caps%2C67&sr=8-2]))
+- [GS40F](https://www.amazon.com/Fingerprint-MEGAFEIS-Bluetooth-Biometric-Cabinet/dp/B08HVGPFCY?ref_=ast_sto_dp) ([Archive](https://web.archive.org/web/20230228190406/https://www.amazon.com/Fingerprint-MEGAFEIS-Bluetooth-Biometric-Cabinet/dp/B08HVGPFCY?ref_=ast_sto_dp))
+- [GS60FB](https://www.amazon.com/Fingerprint-Bluetooth-MEGAFEIS-Suitable-Cabinets/dp/B08MQGGB11?ref_=ast_sto_dp) ([Archive](https://web.archive.org/web/20230228190001/https://www.amazon.com/Fingerprint-Bluetooth-MEGAFEIS-Suitable-Cabinets/dp/B08MQGGB11?ref_=ast_sto_dp))
+- [GQ10FB](https://www.megafeis.com/product-page/fingerprint-bike-lock-cable) ([Archive](https://web.archive.org/web/20230228190533/https://www.megafeis.com/product-page/fingerprint-bike-lock-cable))
+
+These PoCs were tested and proven effec on all of the aforementioned smart lock models.
 
 If you have any feedback or encounter any issues, feel free to reach out or create an issue. 
 
 ____
 
 ### Contents
-- [CVE-2022-45636](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45636) - Insecure Authorization Scheme for API Requests
-- [CVE-2022-45637](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45637) - Insecure Password Reset Code Expiry Mechanism
-- [CVE-2022-45634](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45634) - Intentional Information Disclosure
-- [CVE-2022-45635](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45635) - Insecure Password Policy & Lack of Rate Limiting
+- [CVE-2022-45636](/CVE-2022-45636) - Insecure Authorization Scheme for API Requests in DBD+ Mobile Companion Application for Megafeis Smart Locks
+- [CVE-2022-45637](/CVE-2022-45637) - Insecure Password Reset Code Expiry Mechanism for Megafeis Smart Locks
+- [CVE-2022-45634](/CVE-2022-45634) - Username Disclosure Vulnerability in DBD+ Application Used by Megafeis Smart Locks
+- [CVE-2022-45635](/CVE-2022-45635) - Insecure Password Policy & Lack of Rate Limiting on Megafeis Smart Lock API Server
 
 ____
 
@@ -27,7 +33,7 @@ ____
 | 2022-08-23  | 2nd Attempt at Vendor Outreach                        |
 | 2022-11-16  | MITRE notified; CVE IDs requested                     |
 | 2023-01-31  | CVEs Assigned                                         |
-| 2023-02-28  | Advisories Published                                    |
+| 2023-03-03  | Advisories Published                                    |
 
 ____
 
