@@ -4,6 +4,7 @@ import js2py
 import hashlib
 
 # This function generates the value used in the "SecSignDest" header which the DBD+ app includes in all HTTP requests to the lock-management API
+# Crafted by Abdullah Ansari while at WithSecure
 
 # The API server uses the "SecSignDest" header value to validate request integrity meaning this function can allow attackers to forge requests to the API undetected
 
